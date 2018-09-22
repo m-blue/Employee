@@ -6,9 +6,9 @@ public class Employee {
     private String phoneNumber;
     private int shift;
 
-    public Employee(){};
+    public Employee(){} //Default Constructor
 
-    public Employee(String name, String number, int shift){
+    public Employee(String name, String number, int shift){ // Constructor with Parameters
         this.name = name;
         this.phoneNumber = number;
         this.shift = shift;
@@ -32,7 +32,7 @@ public class Employee {
         this.shift = shift;
     }
 
-    public void DisplayInfo(){
+    public void DisplayInfo(){ // Prints out attributes and add a empty line below
         System.out.println("Name: " + this.name);
         System.out.println("Phone Number: " + this.phoneNumber);
         System.out.println("Shift: " + this.shift);
